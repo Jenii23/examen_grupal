@@ -2,7 +2,7 @@ package ec.edu.espam.api.examen.domain;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -26,6 +26,5 @@ public class Course {
     private String description;
 
     @Column(name = "creationdate")
-    @NotNull(message = "Creation date  is required")
     private LocalDate creationdate;
 }
